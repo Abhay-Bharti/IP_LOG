@@ -25,7 +25,7 @@ app.use(async (req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.sendFile(path.join(__dirname+"/index.html"));
 });
 
 
